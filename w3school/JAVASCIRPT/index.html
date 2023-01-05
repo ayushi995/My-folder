@@ -1,0 +1,200 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+<!-- <head> -->
+<!-- <meta charset="UTF-8"> -->
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!-- <title>Document</title> -->
+<!-- <link rel="stylesheet" href="css/style.css" /> -->
+<!-- </head> -->
+<!-- <body> -->
+<!-- <section class="section-one">Welcome in Javascript</section> -->
+<!-- </body> -->
+<!-- </html> -->
+<!-- <!DOCTYPE html> -->
+<!-- <html> -->
+<!-- <body> -->
+
+<!-- <h2>Creating an Object from a JSON String</h2> -->
+
+<!-- <p id="demo"></p> -->
+
+<!-- <script> -->
+<!-- const txt = '{"name":"John", "age":30, "city":"New York"}' -->
+<!-- console.log(txt); -->
+<!-- const obj = JSON.parse(txt); -->
+<!-- console.log(obj); -->
+<!-- document.getElementById("demo").innerHTML = obj.name + ", " + obj.age; -->
+<!-- </script> -->
+
+<!-- </body> -->
+<!-- </html> 
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Parsing a JSON Array.</h2>
+    <p>Data written as an JSON array will be parsed into a JavaScript array.</p>
+    <p id="demo"></p>
+
+    <script>
+        const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+        console.log(text);
+        const myArr = JSON.parse(text);
+        console.log(myArr);
+        document.getElementById("demo").innerHTML = myArr[0];
+    </script>
+
+</body>
+
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //typeoff method in premitive data types
+        let stringvar = "Ayushi Tyagi";
+        console.log(stringvar, typeof(stringvar));
+
+        let numvar = 27;
+        console.log(numvar, typeof(numvar));
+
+        let bollenvar = true;
+        console.log(bollenvar, typeof(bollenvar));
+        
+        let nullvar  = null ;
+        console.log(nullvar, typeof(nullvar));
+
+        let undefinevar   ;
+        console.log(undefinevar, typeof(undefinevar));
+
+        //Reference data types
+
+        let objectvar = {
+            firstname : "Ayushi",
+            lastname : "Tyagi",
+            mobile : 8368547875,
+        }
+        console.log('Our object is', objectvar);
+
+        let arrayvar = [10, 20, 30, 40, 50, "Ayushi", "Tyagi", true, ""];
+        console.log("Your array is", arrayvar);
+
+        let datevar = new Date();
+        console.log('Current Date is: ' , datevar);
+
+        function ayu(){
+            console.log("This function is made by me");
+        };
+        ayu();
+
+        //string data types
+        //check string length
+         
+        let strlength = "Ayushi Tyagi";
+        console.log("Ayushi Tyagi",strlength.length);
+
+        //toLowerCase 
+        
+        let lower = "AYUSHI TYAGI";
+        console.log(lower.toLowerCase());
+        
+        //toUpperCase 
+        
+        let upper = "ayushi tyagi";
+        console.log(upper.toUpperCase());
+
+        //charAt 
+        
+        let char = "ayushi tyagi";
+        console.log(char.charAt(1));
+
+        //includes 
+        
+        let include = "ayushi tyagi";
+        console.log(include.includes("a"));
+
+        //concat
+        
+        let con = "ayushi tyagi";
+        let conty = "gopu tyagi";
+        let cate = con.concat(conty);
+        console.log(cate);
+
+        //endsWith 
+        
+        let end = "ayush tyagi";
+        console.log(end.endsWith("i"));
+
+        //replace 
+        
+        let rep = "shivani tyagi";
+        console.log(rep.replace("shivani", "ayushi"));
+
+        //split
+        
+        let spl = 'ayushi tyagi';
+        console.log(spl.split(' '));
+
+        let spl2 = 'ayushi tyagi';
+        console.log(spl2.split(''));
+
+        //slice
+        
+        let sli = "ayushi tyagi";
+        console.log(sli.slice(3,4));
+
+        //indexOf
+
+        let inde = "ayushi tyagi";
+        console.log(inde.indexOf("g"));
+
+        //conversion number to string
+
+        let num = 2004;
+        console.log(typeof(String(num)));
+
+        //conversion boolean to string
+
+        let num2 = true;
+        console.log(typeof(String(num2)));
+
+        //conversion array to string
+
+        let num3 = [20, 30, 40];
+        console.log(String(num3));
+
+        let str = Number(2004);
+        console.log(str);
+
+        //Triple Equals to
+
+        let a = 2004;
+        let b = '2004';
+        if(a===b)
+            { console.log('a is equal to b'); } 
+        else{ console.log('a is not equal to b'); }
+
+        //Symbols
+        //Symbols are nothing but similar to string.
+        //Symbols return a unique or new value.
+
+        let one = Symbol('gopu');
+        let two = Symbol('gopu');
+        console.log(one == two);
+
+        //operators
+
+        let ope = 20;
+        ope--;
+        console.log(ope);
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+<!-- <head> -->
+<!-- <meta charset="UTF-8"> -->
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!-- <title>Document</title> -->
+<!-- <link rel="stylesheet" href="css/style.css" /> -->
+<!-- </head> -->
+<!-- <body> -->
+<!-- <section class="section-one">Welcome in Javascript</section> -->
+<!-- </body> -->
+<!-- </html> -->
+<!-- <!DOCTYPE html> -->
+<!-- <html> -->
+<!-- <body> -->
+
+<!-- <h2>Creating an Object from a JSON String</h2> -->
+
+<!-- <p id="demo"></p> -->
+
+<!-- <script> -->
+<!-- const txt = '{"name":"John", "age":30, "city":"New York"}' -->
+<!-- console.log(txt); -->
+<!-- const obj = JSON.parse(txt); -->
+<!-- console.log(obj); -->
+<!-- document.getElementById("demo").innerHTML = obj.name + ", " + obj.age; -->
+<!-- </script> -->
+
+<!-- </body> -->
+<!-- </html> 
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Parsing a JSON Array.</h2>
+    <p>Data written as an JSON array will be parsed into a JavaScript array.</p>
+    <p id="demo"></p>
+
+    <script>
+        const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+        console.log(text);
+        const myArr = JSON.parse(text);
+        console.log(myArr);
+        document.getElementById("demo").innerHTML = myArr[0];
+    </script>
+
+</body>
+
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+Hello World
+<button></button>
+<body>
+<script>
+ var data = {
+	India : 'Delhi',
+	Canada : 'Ottawa',
+	China : 'Beijing',
+	Algeria : 'Algiers'
+ }	;
+ 
+ var cout = Object.keys(data).map((item, index) => {
+	return { title:item, itemindex:index+1, isSelected:false}
+ });
+ 
+ var cap = Object.values(data).map((item, index) => {
+	return { title:item, itemindex:index+1, isSelected:false}
+ });
+ 
+ var arr = [...cout, ...cap];
+ 
+ console.log(arr);
+ 
+ 
+</script>
+</body>
+</html>

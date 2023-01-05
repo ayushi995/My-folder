@@ -1,0 +1,63 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a, d;
+        a = 54;
+        d= 43;
+        a = 34;
+        //document.write(a,d);
+
+        var first= {name:"ayushi",
+                    lastname:"tyagi"};
+        var shiv =  function ayu (){};
+        var gop = "ads";
+        gop = undefined;
+        var de = ["a", "b"];
+        var gopu = new Date();                       
+        //first = "hello";
+        document.write(first instanceof Array);
+        
+    </script>
+</head>
+<body>
+    <a href="javascript:void(document.body.style.backgroundColor='red');">Click Me</a>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <input type="text" placeholder="Enter First Value" id="first" />
+        <input type="text" placeholder="Enter Second Value" id="second" />
+        <input type="button" id="valueadd" value="Submit" onclick="ayushi()" />
+    </section>
+    <script type="text/javascript">
+        function ayushi(){
+            var firstval = document.getElementById('first').value;
+            var secondval = document.getElementById('second').value;
+            var addval = firstval + secondval;
+            var subval = firstval - secondval;
+            var multival = firstval * secondval;
+            var divval = firstval / secondval;
+            console.log("First Value" + " "+ firstval);
+            console.log("Second Value" + " " + secondval);
+            console.log("Add Value" + " " + addval);
+            console.log("Subtract Value" + " " + subval);
+            console.log("Multiply Value" + " " + multival);
+            console.log("Divide Value" + " " + divval);
+            //console.log(firstval + ' ' + secondval + ' ' + outputval);
+        }
+    </script>
+</body>
+</html>
